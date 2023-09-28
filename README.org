@@ -8,4 +8,5 @@ Implements demos in [[https://www.hackingwithswift.com/books/ios-swiftui][Hackin
 
 #+DOWNLOADED: screenshot @ 2023-09-28 19:30:36
 #+ATTR_ORG: :width 400px
+#+attr_html: :width 400px
 [[file:screenshots/SwiftUI_Demos/2023-09-28_19-30-36_screenshot.png]]
