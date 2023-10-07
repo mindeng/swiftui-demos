@@ -13,6 +13,10 @@ struct ContentView: View {
 
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var score = 0
+    
+    @State private var seq = 0
+    @State private var showingEnd = false
     
     var body: some View {
         ZStack {
@@ -24,18 +28,19 @@ struct ContentView: View {
             .ignoresSafeArea()
             
             VStack {
-                Text("Guess the Flag")
-                    .font(.largeTitle.weight(.bold))
-                    
+                Spacer()
+                Text("猜国旗")
+                    .font(.largeTitle.bold())
+                    .foregroundColor(.white)
+                
                 VStack(spacing: 15) {
                     VStack {
-                        Text("Tap the flag of")
+                        Text("请点击该国的国旗图标")
                             .font(.subheadline.weight(.heavy))
-                            .foregroundColor(.white)
+                            .foregroundStyle(.secondary)
                         
                         Text(countries[correctAnswer])
                             .font(.largeTitle.weight(.semibold))
-                            .foregroundColor(.white)
                     }
                     
                     ForEach(0..<3) { number in
@@ -52,27 +57,51 @@ struct ContentView: View {
                     .padding(.vertical, 20)
                     .background(.regularMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-            }.alert(scoreTitle, isPresented: $showingScore) {
-                Button("Continue", action: askQuestion)
-            } message: {
-                Text("Your score is ???")
+                
+                Spacer()
+                Spacer()
+                
+                Text("得分: \(score)")
+                    .foregroundColor(.white)
+                    .font(.title.bold())
+                
+                Spacer()
             }
+            .padding()
+        }.alert(scoreTitle, isPresented: $showingScore) {
+            Button("Continue", action: askQuestion)
+        } message: {
+            Text("得分：\(score)")
+        }.alert("游戏结束！", isPresented: $showingEnd) {
+            Button("重来", action: {
+                askQuestion()
+                seq = 0
+                score = 0
+            })
+        } message: {
+            Text("总得分：\(score)")
         }
     }
     
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        
+        if seq >= 8 {
+            showingEnd = true
+        }
     }
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle = "Correct"
+            scoreTitle = "正确！"
+            score += 1
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "错误! 您选择的是 \(countries[number]) 的国旗."
         }
         
         showingScore = true
+        seq += 1
     }
 }
 
