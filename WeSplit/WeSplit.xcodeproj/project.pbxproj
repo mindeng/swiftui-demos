@@ -7,33 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		393BD2ED2AC2E1E600BA6F04 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BD2EC2AC2E1E600BA6F04 /* WeSplitApp.swift */; };
-		393BD2EF2AC2E1E600BA6F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BD2EE2AC2E1E600BA6F04 /* ContentView.swift */; };
-		393BD2F12AC2E1E800BA6F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393BD2F02AC2E1E800BA6F04 /* Assets.xcassets */; };
-		393BD2F42AC2E1E800BA6F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393BD2F32AC2E1E800BA6F04 /* Preview Assets.xcassets */; };
+		39405AEA2AD10E0E006249C4 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39405AE92AD10E0E006249C4 /* WeSplitApp.swift */; };
+		39405AEC2AD10E0E006249C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39405AEB2AD10E0E006249C4 /* ContentView.swift */; };
+		39405AEE2AD10E10006249C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39405AED2AD10E10006249C4 /* Assets.xcassets */; };
+		39405AF12AD10E10006249C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39405AF02AD10E10006249C4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		39436BF62AC59EC100948F65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39436BF22AC59EC000948F65 /* GuessTheFlag.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 39436BE12AC59EBE00948F65;
-			remoteInfo = GuessTheFlag;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		393BD2E92AC2E1E600BA6F04 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		393BD2EC2AC2E1E600BA6F04 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
-		393BD2EE2AC2E1E600BA6F04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		393BD2F02AC2E1E800BA6F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		393BD2F32AC2E1E800BA6F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		39436BF22AC59EC000948F65 /* GuessTheFlag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GuessTheFlag.xcodeproj; path = GuessTheFlag/GuessTheFlag.xcodeproj; sourceTree = "<group>"; };
+		39405AE62AD10E0E006249C4 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39405AE92AD10E0E006249C4 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
+		39405AEB2AD10E0E006249C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39405AED2AD10E10006249C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39405AF02AD10E10006249C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		393BD2E62AC2E1E600BA6F04 /* Frameworks */ = {
+		39405AE32AD10E0E006249C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,60 +32,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		393BD2E02AC2E1E600BA6F04 = {
+		39405ADD2AD10E0E006249C4 = {
 			isa = PBXGroup;
 			children = (
-				39436BF22AC59EC000948F65 /* GuessTheFlag.xcodeproj */,
-				393BD2EB2AC2E1E600BA6F04 /* WeSplit */,
-				393BD2EA2AC2E1E600BA6F04 /* Products */,
+				39405AE82AD10E0E006249C4 /* WeSplit */,
+				39405AE72AD10E0E006249C4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		393BD2EA2AC2E1E600BA6F04 /* Products */ = {
+		39405AE72AD10E0E006249C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				393BD2E92AC2E1E600BA6F04 /* WeSplit.app */,
+				39405AE62AD10E0E006249C4 /* WeSplit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		393BD2EB2AC2E1E600BA6F04 /* WeSplit */ = {
+		39405AE82AD10E0E006249C4 /* WeSplit */ = {
 			isa = PBXGroup;
 			children = (
-				393BD2EC2AC2E1E600BA6F04 /* WeSplitApp.swift */,
-				393BD2EE2AC2E1E600BA6F04 /* ContentView.swift */,
-				393BD2F02AC2E1E800BA6F04 /* Assets.xcassets */,
-				393BD2F22AC2E1E800BA6F04 /* Preview Content */,
+				39405AE92AD10E0E006249C4 /* WeSplitApp.swift */,
+				39405AEB2AD10E0E006249C4 /* ContentView.swift */,
+				39405AED2AD10E10006249C4 /* Assets.xcassets */,
+				39405AEF2AD10E10006249C4 /* Preview Content */,
 			);
 			path = WeSplit;
 			sourceTree = "<group>";
 		};
-		393BD2F22AC2E1E800BA6F04 /* Preview Content */ = {
+		39405AEF2AD10E10006249C4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				393BD2F32AC2E1E800BA6F04 /* Preview Assets.xcassets */,
+				39405AF02AD10E10006249C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		39436BF32AC59EC000948F65 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				39436BF72AC59EC100948F65 /* GuessTheFlag.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		393BD2E82AC2E1E600BA6F04 /* WeSplit */ = {
+		39405AE52AD10E0E006249C4 /* WeSplit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 393BD2F72AC2E1E800BA6F04 /* Build configuration list for PBXNativeTarget "WeSplit" */;
+			buildConfigurationList = 39405AF42AD10E10006249C4 /* Build configuration list for PBXNativeTarget "WeSplit" */;
 			buildPhases = (
-				393BD2E52AC2E1E600BA6F04 /* Sources */,
-				393BD2E62AC2E1E600BA6F04 /* Frameworks */,
-				393BD2E72AC2E1E600BA6F04 /* Resources */,
+				39405AE22AD10E0E006249C4 /* Sources */,
+				39405AE32AD10E0E006249C4 /* Frameworks */,
+				39405AE42AD10E0E006249C4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -104,25 +84,25 @@
 			);
 			name = WeSplit;
 			productName = WeSplit;
-			productReference = 393BD2E92AC2E1E600BA6F04 /* WeSplit.app */;
+			productReference = 39405AE62AD10E0E006249C4 /* WeSplit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		393BD2E12AC2E1E600BA6F04 /* Project object */ = {
+		39405ADE2AD10E0E006249C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					393BD2E82AC2E1E600BA6F04 = {
-						CreatedOnToolsVersion = 14.3.1;
+					39405AE52AD10E0E006249C4 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 393BD2E42AC2E1E600BA6F04 /* Build configuration list for PBXProject "SwiftUI-Demos" */;
+			buildConfigurationList = 39405AE12AD10E0E006249C4 /* Build configuration list for PBXProject "WeSplit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,61 +110,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 393BD2E02AC2E1E600BA6F04;
-			productRefGroup = 393BD2EA2AC2E1E600BA6F04 /* Products */;
+			mainGroup = 39405ADD2AD10E0E006249C4;
+			productRefGroup = 39405AE72AD10E0E006249C4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 39436BF32AC59EC000948F65 /* Products */;
-					ProjectRef = 39436BF22AC59EC000948F65 /* GuessTheFlag.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				393BD2E82AC2E1E600BA6F04 /* WeSplit */,
+				39405AE52AD10E0E006249C4 /* WeSplit */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		39436BF72AC59EC100948F65 /* GuessTheFlag.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = GuessTheFlag.app;
-			remoteRef = 39436BF62AC59EC100948F65 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		393BD2E72AC2E1E600BA6F04 /* Resources */ = {
+		39405AE42AD10E0E006249C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393BD2F42AC2E1E800BA6F04 /* Preview Assets.xcassets in Resources */,
-				393BD2F12AC2E1E800BA6F04 /* Assets.xcassets in Resources */,
+				39405AF12AD10E10006249C4 /* Preview Assets.xcassets in Resources */,
+				39405AEE2AD10E10006249C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		393BD2E52AC2E1E600BA6F04 /* Sources */ = {
+		39405AE22AD10E0E006249C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393BD2EF2AC2E1E600BA6F04 /* ContentView.swift in Sources */,
-				393BD2ED2AC2E1E600BA6F04 /* WeSplitApp.swift in Sources */,
+				39405AEC2AD10E0E006249C4 /* ContentView.swift in Sources */,
+				39405AEA2AD10E0E006249C4 /* WeSplitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		393BD2F52AC2E1E800BA6F04 /* Debug */ = {
+		39405AF22AD10E10006249C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -217,7 +182,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -231,20 +197,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		393BD2F62AC2E1E800BA6F04 /* Release */ = {
+		39405AF32AD10E10006249C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -277,7 +245,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -285,17 +254,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		393BD2F82AC2E1E800BA6F04 /* Debug */ = {
+		39405AF52AD10E10006249C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		393BD2F92AC2E1E800BA6F04 /* Release */ = {
+		39405AF62AD10E10006249C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -354,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		393BD2E42AC2E1E600BA6F04 /* Build configuration list for PBXProject "SwiftUI-Demos" */ = {
+		39405AE12AD10E0E006249C4 /* Build configuration list for PBXProject "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				393BD2F52AC2E1E800BA6F04 /* Debug */,
-				393BD2F62AC2E1E800BA6F04 /* Release */,
+				39405AF22AD10E10006249C4 /* Debug */,
+				39405AF32AD10E10006249C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		393BD2F72AC2E1E800BA6F04 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
+		39405AF42AD10E10006249C4 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				393BD2F82AC2E1E800BA6F04 /* Debug */,
-				393BD2F92AC2E1E800BA6F04 /* Release */,
+				39405AF52AD10E10006249C4 /* Debug */,
+				39405AF62AD10E10006249C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 393BD2E12AC2E1E600BA6F04 /* Project object */;
+	rootObject = 39405ADE2AD10E0E006249C4 /* Project object */;
 }
