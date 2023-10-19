@@ -13,25 +13,62 @@ struct ContentView: View {
     
     @State private var showingAddExpense = false
     
+    var personalExpenses: [ExpenseItem] {
+        expenses.items.filter {
+            $0.type == "Personal"
+        }
+    }
+    
+    var businessExpenses: [ExpenseItem] {
+        expenses.items.filter {
+            $0.type == "Business"
+        }
+    }
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack(alignment: .leading, content: {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
-                        })
-                        
-                        Spacer()
-                        Text(
-                            item.amount,
-                            format: .currency(code: Locale.current.currency?.identifier ?? "USD")
-                        )
+                Section("Personal") {
+                    ForEach(personalExpenses) { item in
+                        HStack {
+                            VStack(alignment: .leading, content: {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            })
+                            
+                            Spacer()
+                            Text(
+                                item.amount,
+                                format: .currency(code: Locale.current.currency?.identifier ?? "USD")
+                            )
+                        }
                     }
+                    .onDelete(perform: {
+                        removeItems(isPersonal: true, at: $0)
+                    })
                 }
-                .onDelete(perform: removeItems)
+                
+                Section("Business") {
+                    ForEach(businessExpenses) { item in
+                        HStack {
+                            VStack(alignment: .leading, content: {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            })
+                            
+                            Spacer()
+                            Text(
+                                item.amount,
+                                format: .currency(code: Locale.current.currency?.identifier ?? "USD")
+                            )
+                        }
+                    }
+                    .onDelete(perform: {
+                        removeItems(isPersonal: false, at: $0)
+                    })
+                }
             }
             .navigationTitle("iExpense")
             .toolbar {
@@ -47,8 +84,14 @@ struct ContentView: View {
         }
     }
     
-    func removeItems(at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
+    func removeItems(isPersonal: Bool, at offsets: IndexSet) {
+//        expenses.items.remove(atOffsets: offsets)
+        let items = isPersonal ? personalExpenses : businessExpenses
+        offsets.forEach { idx in
+            expenses.items.removeAll { item in
+                item.id == items[idx].id
+            }
+        }
     }
 }
 
